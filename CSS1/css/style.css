@@ -1,0 +1,16 @@
+body{
+  font-family: monospace;
+}
+
+h1, h2{
+  color: pink;
+}
+
+.bold{
+  font-weight: 500;
+  font-family: Verdana;
+}
+
+p span{
+  font-style: italic;
+}
