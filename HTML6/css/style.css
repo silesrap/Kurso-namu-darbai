@@ -1,0 +1,21 @@
+input[type="text"]{
+  width: 100%;
+  color: #777777;
+  font-size: 20px;
+  text-align: right;
+  height: 40px;
+}
+input[type="button"]{
+  background-color: #ccc;
+  padding: 5px;
+  width: 63px;
+  color: red;
+  font-size: 20px;
+  border: 2px outset;
+  border-radius: 0px;
+}
+input[type="button"]:focus{
+  background-color: #cecece;
+  border: 2px inset;
+  outline: none;
+}
