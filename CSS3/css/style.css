@@ -16,9 +16,10 @@ p{
 .bold{
   font-weight: bold;
 }
-span{
+a{
   color: #1689d6;
   font-weight: normal;
+  text-decoration: none;
 }
 .author{
   float: right;
