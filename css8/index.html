@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS8</title>
+    <style media="screen">
+      body{
+        padding: 20px;
+      }
+      .container{
+        max-width: 600px;
+      }
+      .reg_form{
+        background: #fff5a7;
+        padding:20px;
+      }
+      td{
+        width:150px;
+      }
+      input{
+        border-radius: 5px;
+        height: 25px;
+        width: 300px;
+        outline:none;
+      }
+      button{
+        width: 455px;
+        height: 25px;
+        background: #cecece;
+        outline:none;
+      }
+      .guests{
+        background: #c4febf;
+        padding: 20px;
+        margin-top: 5px;
+      }
+      .guests table td{
+        border: 1px solid grey;
+        margin: 0;
+        height: 25px;
+        padding:5px;
+      }
+      .guests th{
+        background: #c7bafd;
+        padding: 5px;
+      }
+      .guests table {
+        border-collapse: collapse;
+        border: 1px solid grey;
+      }
+      .double{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registracija i rengini</h1>
+      <div class="reg_form">
+        <h2>Registracijos forma</h2>
+        <p>Jeigu norite uzsiregistruoti i rengini, uzpildykite zemiau esancia forma. Zemiau lenteleje galite matyti jau uzsiregistravusius dalyvius.</p>
+        <form class="" action="#" method="post">
+          <table>
+            <tr>
+              <td>Vardas</td>
+              <td><input type="text" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>Pavarde</td>
+              <td><input type="text" name="" value=""></td>
+            </tr>
+            <tr>
+              <td>El. pastas</td>
+              <td><input type="text" name="" value=""></td>
+            </tr>
+          </table>
+          <button type="button" name="button">Registruoti</button>
+        </form>
+      </div>
+      <div class="guests">
+        <h2>Jau uzsiregistrave dalyviai:</h2>
+        <table>
+          <tr>
+            <th class="double" colspan="2">Vardas</th>
+            <th>Pavarde</th>
+            <th>Elektroninis pastas</th>
+          </tr>
+          <tr>
+            <td colspan="2">Jonas</td>
+            <td>Jonaitis</td>
+            <td>jonaitis@gmail.com</td>
+          </tr>
+          <tr>
+            <td colspan="2">Petras</td>
+            <td>Petraitis</td>
+            <td>petraitis@gmail.com</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
