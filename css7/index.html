@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS7</title>
+    <style media="screen">
+      @font-face {
+        font-family: myfont;
+        src: url(fonts/roboto-light.ttf);
+      }
+      .calendar{
+        display: block;
+        min-width: 730px;
+        max-width: 730px;
+        font-family: myfont;
+        font-weight: 100;
+        color: black;
+      }
+      .month{
+        font-size: 2em;
+        margin: 5px;
+      }
+      .day{
+        height: 100px;
+        width: 100px;
+        border: 1px solid #ccc;
+        margin: 0px 2px 2px 0px;
+        box-shadow: 1px 1px rgba(0, 0,0, 0.1);
+        float: left;
+      }
+      .weekend{
+        background: #fdba2c;
+      }
+      .day p{
+        display: block;
+        margin: 5px;
+        font-size: 12px;
+      }
+      .event1{
+        background: #bbb1dd;
+        margin: 3px;
+        padding: px;
+        font-size: 10px
+      }
+      .event1:hover{
+        background: #827b9a;
+        color: white;
+      }
+      .event2{
+        background: #9bc544;
+        margin: 3px;
+        padding-left: 3px;
+        font-size: 10px
+      }
+      .event2:hover{
+        background: #769633;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar">
+      <div class="month">
+        Lapkritis
+      </div>
+      <div class="day">
+        <p>1</p>
+
+      </div>
+      <div class="day">
+        <p>2</p>
+      </div>
+      <div class="day">
+        <p>3</p>
+      </div>
+      <div class="day">
+        <p>4</p>
+        <div class="event1">
+          Paskaita
+        </div>
+      </div>
+      <div class="day">
+        <p>5</p>
+      </div>
+      <div class="day weekend">
+        <p>6</p>
+        <div class="event2">
+          Koncertas
+        </div>
+      </div>
+      <div class="day weekend">
+        <p>7</p>
+      </div>
+      <div class="day">
+        <p>8</p>
+      </div>
+      <div class="day">
+        <p>9</p>
+      </div>
+      <div class="day">
+        <p>10</p>
+      </div>
+      <div class="day">
+        <p>11</p>
+      </div>
+      <div class="day">
+        <p>12</p>
+      </div>
+      <div class="day weekend">
+        <p>13</p>
+      </div>
+      <div class="day weekend">
+        <p>14</p>
+        <div class="event2">
+          Susitikimas
+        </div>
+      </div>
+      <div class="day">
+        <p>15</p>
+      </div>
+      <div class="day">
+        <p>16</p>
+      </div>
+      <div class="day">
+        <p>17</p>
+      </div>
+      <div class="day">
+        <p>18</p>
+        <div class="event1">
+          Laisva diena
+        </div>
+      </div>
+      <div class="day">
+        <p>19</p>
+      </div>
+      <div class="day weekend">
+        <p>20</p>
+      </div>
+      <div class="day weekend">
+        <p>21</p>
+      </div>
+      <div class="day">
+        <p>22</p>
+      </div>
+      <div class="day">
+        <p>23</p>
+      </div>
+      <div class="day">
+        <p>24</p>
+      </div>
+      <div class="day">
+        <p>25</p>
+      </div>
+      <div class="day">
+        <p>26</p>
+      </div>
+      <div class="day weekend">
+        <p>27</p>
+      </div>
+      <div class="day weekend">
+        <p>28</p>
+      </div>
+    </div>
+  </body>
+</html>
