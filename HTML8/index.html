@@ -3,63 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title>HTML8</title>
+    <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
   </head>
   <body>
-  <form action="">
-    <fieldset>
-    <legend>Jusu informacija:</legend>
-    <table>
-      <tr>
-        <td>Vardas:</td>
-        <td><input type="text" name="firstname" value="Vardas"></td>
-      </tr>
-      <tr>
-        <td>Pavarde:</td>
-        <td><input type="text" name="lastname" value="Pavarde"></td>
-      </tr>
-    </table>
-    </fieldset>
-    <fieldset>
-    <legend>Klausimai:</legend>
-    Kaip suzinojote apie mus?
-    <select>
-      <option value="volvo">Google</option>
-      <option value="saab">Yahoo</option>
-      <option value="opel">MSN</option>
-    </select>
-    <br><br>
-    Ar apsilankysite vel?
-    <br>
-    Taip <input type="radio" name="taip" value="taip">
-    Ne <input type="radio" name="ne" value="ne">
-    Galbut <input type="radio" name="galbut" value="galbut">
-    <br><br>
-    Ka manote apie kursa?
-    <br>
-    <textarea name="message" rows="10" cols="60"></textarea>
-    <br><br>
-    Pazymekite programavimo/zymejimo kalbas su kuriomis esate susipazine:
-    <br>
-    <table>
-      <tr>
-        <td><input type="checkbox" name="c" value="c">C#</td>
-        <td><input type="checkbox" name="java" value="java">JAVA</td>
-        <td><input type="checkbox" name="php" value="php">PHP</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" name="html" value="html">HTML</td>
-        <td><input type="checkbox" name="css" value="css">CSS</td>
-        <td><input type="checkbox" name="js" value="js">JAVASCRIPT</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" name="python" value="python">Python</td>
-        <td><input type="checkbox" name="ruby" value="ruby">Ruby</td>
-      </tr>
-    </table>
-    <br><br>
-    <input type="submit" name="siusti" value="Siusti">
-    </fieldset>
-  </form>
+    <div class="container">
+    <form action="">
+      <fieldset>
+      <legend>Jusu informacija:</legend>
+      <table class="highlight ">
+        <tr class="materialize">
+          <td>Vardas:</td>
+          <td><input type="text" name="firstname" value=""></td>
+        </tr>
+        <tr>
+          <td>Pavarde:</td>
+          <td><input type="text" name="lastname" value=""></td>
+        </tr>
+      </table>
+      </fieldset>
+      <fieldset>
+      <legend>Klausimai:</legend>
+      <div class="material_select">
+      <select>
+        <option value="" disabled selected>Is kur apie mus suzinojote?</option>
+        <option value="1">Google</option>
+        <option value="2">Facebook</option>
+        <option value="3">Is draugu</option>
+      </select>
+      <label>Materialize Select</label>
+    </div>
 
+      <br><br>
+      <p>Ar apsilankysite vel?</p>
+        <input class="with-gap" name="group1" type="radio" id="taip" />
+        <label for="taip">Taip</label>
+
+        <input class="with-gap" name="group1" type="radio" id="ne" />
+        <label for="ne">Ne</label>
+
+        <input class="with-gap" name="group1" type="radio" id="galbut" />
+        <label for="galbut">Galbut</label>
+
+      <br><br><br>
+      Ka manote apie kursa?
+      <textarea class="materialize-textarea" name="message"></textarea>
+      <br><br>
+      <p class="">Pazymekite programavimo/zymejimo kalbas su kuriomis esate susipazine:</p>
+
+      <table>
+        <tr>
+          <td><input type="checkbox" id="c#" />
+            <label for="c#">C#</label></td>
+          <td><input type="checkbox" id="java" />
+            <label for="java">JAVA</label></td>
+          <td><input type="checkbox" id="php" />
+            <label for="php">PHP</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="html" />
+            <label for="html">HTML</label></td>
+          <td><input type="checkbox" id="css" />
+            <label for="css">CSS</label></td>
+          <td><input type="checkbox" id="js" />
+            <label for="js">JAVASCRIPT</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="python" />
+            <label for="python">Python</label></td>
+          <td><input type="checkbox" id="ruby" />
+            <label for="ruby">Ruby</label></td>
+        </tr>
+      </table>
+      <br><br>
+      <input class="btn red"type="submit" name="siusti" value="Siusti">
+      </fieldset>
+    </form>
+
+    <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+          $('select').material_select();
+          });
+        </script>
+    </div>
   </body>
+
 </html>
