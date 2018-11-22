@@ -6,14 +6,15 @@
   </head>
   <body>
     <script type="text/javascript">
-      var vardai= ["Jonas", "Antanas", "Petras", "Kestas", "Laimonas"];
 
-      nespausdintiVienoVardo(vardai);
+      nespausdintiVienoVardo();
 
-      function nespausdintiVienoVardo(vardai) {
-        var nerasytiPirmo= vardai.splice(0,1);
-        document.write(vardai);
-      }
+      function nespausdintiVienoVardo() {
+        var vardai = ["Jonas", " Antanas", " Petras", " Kestas", " Laimonas"];
+        var nerasyti = " Laimonas";
+        var beVardo = vardai.filter(vardas => vardas !== nerasyti);
+        document.write(beVardo);
+      };
     </script>
   </body>
 </html>
