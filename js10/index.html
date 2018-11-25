@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var objektas1 = {
+        "id":1,
+        "item":"Atsuktuvas",
+        "date":"2018",
+        "color":"geltona",
+        "price": "5"
+      };
+      var objektas2 = {
+        "id":2,
+        "item":"Raktas",
+        "date":"2018",
+        "color":"pilka",
+        "price": "2"
+      };
+
+      var objektuMasyvas = [objektas1,objektas2];
+      $.each(objektuMasyvas, function(index, value){
+        index+=1;
+        console.log("#" + index);
+        console.log("Preke " + value.item);
+        console.log("Pagaminimo data " + value.date);
+        console.log("Spalva " + value.color);
+        console.log("Kaina " + value.price);
+        console.log('\n');
+      });
+    </script>
+  </body>
+</html>
