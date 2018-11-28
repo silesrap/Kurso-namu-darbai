@@ -8,6 +8,8 @@
     <ul>
       <?php
       $cities4 = ['Tokijas', 'Vasingtonas', 'Maskva', 'Londonas'];
+      
+      print_r($cities4);
 
       for ($i=0; $i < count($cities4); $i++) {
         echo '<li>' . $cities4[$i] . '</li>';
