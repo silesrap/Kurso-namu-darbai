@@ -8,6 +8,7 @@
     <?php
       if (isset($_POST['submit']).$_POST['ilgis'] && $_POST['plotis']) {
           echo ($_POST['ilgis'] * $_POST['plotis']);
+          exit();
         }
     ?>
     <form class='' action='<?php $_PHP_SELF; ?>' method='POST'>
