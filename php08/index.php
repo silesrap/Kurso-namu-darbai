@@ -10,8 +10,8 @@
 
     $temp = [4, 3, 9, 19, 19, 9, 12, 20, 24, 20, 12, 14, 18, 21, 20, 23, 16, 16, 15, 19, 19, 17, 17, 15, 12, 13, 13, 15, 19, 21];
 
-    $average = array_sum($temp) / count($temp);
-    echo 'Vidutine:' .round($average).'<br><br>';
+    $average = array_sum($temp) / count($temp);// sudeda visus ir padalina is dienu skaiciaus
+    echo 'Vidutine:' .round($average).'<br><br>'; // suapvalina
 
     $unikalus = array_unique($temp); // cia padariau, kad nesikartotu ta pati temperatura
     rsort($unikalus);
