@@ -1,12 +1,12 @@
 <?php
 function copyright()
 {
-  $date = 2011;
+  $date = 2013;
   $currentDate = date('Y');
   //patikriname ivesta data su dabartine data
   if ($date < $currentDate) {
     echo '&copy; ' . $date . '-' . date('Y');
-  } elseif ($date >= $currentDate){
+  } else{
     echo '&copy; ' . $currentDate;
   }
 }
