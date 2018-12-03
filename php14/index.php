@@ -1,7 +1,7 @@
 <?php
-function copyright()
+function copyright($date)
 {
-  $date = 2013;
+
   $currentDate = date('Y');
   //patikriname ivesta data su dabartine data
   if ($date < $currentDate) {
@@ -11,5 +11,5 @@ function copyright()
   }
 }
 //atvaizduojame data
-echo copyright();
+echo copyright(2011);
  ?>
