@@ -13,11 +13,17 @@
 
     <body>
       <div class="row">
+        <div class="front-wrap">
+          <div class="front-logo">
+            <img src="images/avatar-dark.png" alt="">
+          </div>
+
+        </div>
         <div class="left col l6 m6 s12 hoverable">
-          <a href="http://www.laimonasfoto.lt" target="_blank" class="waves-effect waves-light btn-large white #757575 grey-text darken-1-text ">Fotografija</a>
+          <a href="http://www.laimonasfoto.lt" target="_blank" class="waves-effect waves-light btn-large #ffffff white grey-text lighten-2-text">Fotografija</a>
         </div>
         <div class="right col l6 m6 s12 hoverable">
-          <a href="portfolio.html" class="waves-effect waves-light btn-large #efebe9 brown lighten-5 #757575 grey-text darken-1-text">Web Paslaugos</a>
+          <a href="about.php" class="waves-effect waves-light btn-large #eeeeee grey lighten-3 grey-text lighten-5-text">Web Paslaugos</a>
         </div>
       </div>
 
