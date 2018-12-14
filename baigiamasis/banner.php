@@ -11,7 +11,7 @@
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
-        <form class="col s12 m12 l12" action="forma/app.php" method="post">
+        <form class="col s12 m12 l12" action="contact-form/app.php" method="post">
           <div class="row">
             <div class="input-field col s12 m6 l6">
               <input placeholder="Name" id="first_name" name="name" type="text" required class="validate">

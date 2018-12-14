@@ -1,12 +1,12 @@
 <?php
-  require __DIR__ . '/forma/app.php';
+  require __DIR__ . '/contact-form/app.php';
  ?>
 <footer>
   <div class="page-name">
     <span id="kontaktai">Contact me</span>
   </div>
   <div class="container">
-    <form class="col s12 m12 l12" action="forma/app.php" method="post">
+    <form class="col s12 m12 l12" action="contact-form/app.php" method="post">
       <div class="row">
         <div class="input-field col s12 m6 l6">
           <input placeholder="Name" id="first_name" name="name" type="text" required class="validate">
